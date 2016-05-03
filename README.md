@@ -81,9 +81,16 @@ The input directory should be the directory containing prefixes.txt and units.js
 
 ## Start the service
 
+To start the service, navigate to the grobid-quantities folder.
+
+> cd PATH-TO-GROBID/grobid/grobid-quantities
+
 > mvn -Dmaven.test.skip=true jetty:run-war
 
 Demo/console web app is then accessible at ```http://localhost:8080```
+
+Note: Running the start service command outside of the grobid-quanitites folder can start the grobid without grobid-quantities.
+
 
 Using ```curl``` POST/GET requests:
 
